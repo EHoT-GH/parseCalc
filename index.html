@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PIXIJS Test Task</title>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<div class="calc-wrapper">
+  <div>
+    <input type="text" id="input" placeholder="Выражение..."
+           onkeydown="event.keyCode == 13 ? calculate() : false">
+    <button onclick="calculate()" title="Посчитать">&#8629;</button>
+    <!--<span id="result"></span>-->
+  </div>
+  <div>
+    <input type="text" id="result" disabled placeholder="результат"/>
+  </div>
+</div>
+<script src="scripts/main.min.js"></script>
+</body>
+</html>
